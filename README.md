@@ -54,7 +54,7 @@ kw_list = ["Python programming", "Data science"]
 pytrends.build_payload(kw_list, cat=0, timeframe='today 5-y', geo='', gprop='')
 kw_list: Lista de términos de búsqueda.
 cat: Categoría a la que pertenecen los términos de búsqueda.
-timeframe: Rango de tiempo para la consulta (ejemplo: 'today 5-y').
+timeframe: Rango de tiempo para la consulta (ejemplo: 'today 5-y', 'today 12-m').
 geo: Geolocalización para la consulta (por defecto, búsqueda global).
 gprop: Propiedad de búsqueda (por defecto, web).
 interest_over_time()
