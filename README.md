@@ -93,3 +93,10 @@ print(search_data)
 | 2018-08-12 | 36 | False|
 | 2018-08-19 | 34| False|
 | 2018-08-26| 34| False|
+
+
+1.  **Fecha (Date)**: La columna "date" simplemente muestra las fechas en las que se observó el nivel de interés.
+    
+2.  **Índice de Interés (Interest Index)**: Los números en esta columna representan el nivel relativo de interés en una palabra clave o término de búsqueda en las fechas correspondientes. Sin conocer el contexto exacto de los datos, es posible que estos números sean valores normalizados que indican la popularidad relativa de la palabra clave en relación con un período de tiempo o ubicación específico. Por ejemplo, un valor de 45 podría significar que el interés en la palabra clave en esa fecha específica fue aproximadamente el 45% del nivel más alto de interés observado en el período.
+    
+3.  **Valor Booleano (Boolean Value)**: La columna booleana muestra valores "True" o "False". En tu ejemplo, la última fila tiene un valor "True". Esto podría indicar algún tipo de evento o situación especial relacionada con la palabra clave en esa fecha específica. Sin más contexto, no puedo determinar con certeza qué representa este valor booleano.
