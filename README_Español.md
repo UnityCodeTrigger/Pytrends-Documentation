@@ -13,7 +13,7 @@ Pip es el sistema de gestión de paquetes para Python. Ejecuta el siguiente coma
 pip install pytrends
 </pre>
 
-## 2.2 Verificación de la instalación
+### 2.2 Verificación de la instalación
 Para verificar que la instalación se realizó correctamente, puedes abrir un entorno de Python interactivo ejecutando el comando python en tu terminal y luego intentar importar PyTrends:
 
 <pre>
