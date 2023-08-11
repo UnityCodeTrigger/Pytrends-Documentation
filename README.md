@@ -71,6 +71,7 @@ Además de *interest_over_time()*, PyTrends ofrece otros métodos para acceder a
 
 ### Interest Over Time
 `pytrends.interest_over_time()` se utiliza para obtener datos sobre el interés a lo largo del tiempo para una o más palabras clave específicas. Esta función devuelve un objeto de tipo `pandas.DataFrame`, que es una estructura de datos de la librería `pandas` que se asemeja a una tabla de base de datos o una hoja de cálculo de Excel.
+
 **Input**
 <pre>
 from pytrends.request import TrendReq
