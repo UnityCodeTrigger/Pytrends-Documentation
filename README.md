@@ -72,12 +72,19 @@ Además de *interest_over_time()*, PyTrends ofrece otros métodos para acceder a
 ### Interest Over Time
 `pytrends.interest_over_time()` se utiliza para obtener datos sobre el interés a lo largo del tiempo para una o más palabras clave específicas. Esta función devuelve un objeto de tipo `pandas.DataFrame`, que es una estructura de datos de la librería `pandas` que se asemeja a una tabla de base de datos o una hoja de cálculo de Excel.
 **Input**
-`from pytrends.request import TrendReq`
-`pytrends  = TrendReq(hl='es-US', tz=360)`
-`keyword  = ["minecraft"]`
-`pytrends.build_payload(kw_list=keyword)`
-`search_data  =  pytrends.interest_over_time()`
-`print(search_data)`
+<pre>
+from pytrends.request import TrendReq
+# Configura la conexión a Google Trends
+pytrends  = TrendReq(hl='es-US', tz=360)
+# Palabra clave para la que deseas obtener información
+keyword  = ["minecraft"]
+# Construye la consulta
+pytrends.build_payload(kw_list=keyword)
+# Obtiene los datos de volumen de búsqueda
+search_data  =  pytrends.interest_over_time()
+# Imprime los datos de volumen de búsqueda
+print(search_data)
+</pre>
 
 **Output**
 |  date|  Keyword 1|isPartial |
@@ -85,4 +92,3 @@ Además de *interest_over_time()*, PyTrends ofrece otros métodos para acceder a
 | 2018-08-12 | 36 | False|
 | 2018-08-19 | 34| False|
 | 2018-08-26| 34| False|
-
