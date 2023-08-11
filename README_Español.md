@@ -68,3 +68,21 @@ trends_data = pytrends.interest_over_time()
 
 ### Otros Métodos
 Además de *interest_over_time()*, PyTrends ofrece otros métodos para acceder a diferentes tipos de datos de tendencias, como *interest_by_region()*, -*related_queries()*, *related_topics()*, etc.
+
+### Interest Over Time
+`pytrends.interest_over_time()` se utiliza para obtener datos sobre el interés a lo largo del tiempo para una o más palabras clave específicas. Esta función devuelve un objeto de tipo `pandas.DataFrame`, que es una estructura de datos de la librería `pandas` que se asemeja a una tabla de base de datos o una hoja de cálculo de Excel.
+**Input**
+`from pytrends.request import TrendReq`
+`pytrends  = TrendReq(hl='es-US', tz=360)`
+`keyword  = ["minecraft"]`
+`pytrends.build_payload(kw_list=keyword)`
+`search_data  =  pytrends.interest_over_time()`
+`print(search_data)`
+
+**Output**
+|  date|  Keyword 1|isPartial |
+|--|--|--|
+| 2018-08-12 | 36 | False|
+| 2018-08-19 | 34| False|
+| 2018-08-26| 34| False|
+
