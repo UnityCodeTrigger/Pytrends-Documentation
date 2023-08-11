@@ -88,7 +88,7 @@ print(search_data)
 </pre>
 
 **Output**
-|  date|  Keyword 1|isPartial |
+|  date|  Interest Index|isPartial |
 |--|--|--|
 | 2018-08-12 | 36 | False|
 | 2018-08-19 | 34| False|
