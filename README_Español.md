@@ -21,7 +21,6 @@ import pytrends
 </pre>
 Si no se produce ningún error, la instalación se completó con éxito.
 
-/***************/
 
 ## API
 
