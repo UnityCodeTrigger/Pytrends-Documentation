@@ -178,3 +178,43 @@ region_interest_selected = region_interest[region_interest.index.isin(countries)
 # Mostrar los datos
 print(region_interest_selected)
 
+### Suggestions
+Esta función devuelve una lista de sugerencias de palabras clave relacionadas a partir de un término de búsqueda específico. Las sugerencias de palabras clave son términos que están relacionados con el término de búsqueda proporcionado y pueden ser útiles para expandir o refinar las consultas de búsqueda.
+
+#### Parámetros:
+
+- `keyword`: El término de búsqueda para el cual deseas obtener sugerencias de palabras clave.
+
+#### Valor de Retorno:
+
+La función `suggestions` devuelve una lista de diccionarios, donde cada diccionario representa una sugerencia de palabra clave relacionada. Cada diccionario contiene información sobre la sugerencia, incluyendo el título de la sugerencia.
+
+**Input**
+<pre>
+```python
+from pytrends.request import TrendReq
+
+# Configurar la API de Google Trends
+pytrends = TrendReq(hl='es-US', tz=360)
+
+# Término de búsqueda para el que deseas obtener sugerencias
+keyword = "España"
+
+# Obtener sugerencias de palabras clave relacionadas
+suggestions = pytrends.suggestions(keyword)
+
+# Mostrar las sugerencias obtenidas
+for suggestion in suggestions:
+    print(suggestion['title'])
+</pre>
+
+En este ejemplo, el atributo `suggestion['title']` se utiliza para acceder al título de cada sugerencia de palabra clave relacionada en el resultado y se imprime en la consola. Cada elemento en la lista de sugerencias devuelta por `pytrends.suggestions()` tiene un diccionario con varias claves, y `'title'` es una de ellas que contiene el título de la sugerencia de palabra clave.
+
+**Output**
+<pre>
+España				#Title
+Marks & Spencer		#Sugerencias
+Lotería Nacional de España
+Segunda División de España
+Copa del Rey
+</pre>
