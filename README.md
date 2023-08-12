@@ -154,24 +154,20 @@ La función `interest_by_region` devuelve un DataFrame de Pandas que contiene lo
 <pre>
 from pytrends.request import TrendReq
 
-# Configurar la API de Google Trends
-pytrends = TrendReq(hl='es-US', tz=360)
+# Configura la conexión a Google Trends
+pytrends = TrendReq(hl='es-US', tz=360, geo='ES')  # Establece 'geo' como 'ES' para España
 
 # Palabra clave para la que deseas obtener información
 keyword = ["minecraft"]
 
-# Construir la consulta
+# Construye la consulta
 pytrends.build_payload(kw_list=keyword)
 
-# Obtener datos de interés por país
-region_interest = pytrends.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False)
+# Obtiene los datos de volumen de búsqueda para España
+search_data = pytrends.interest_over_time()
 
-# Filtrar los resultados para incluir solo los datos de los países mencionados
-countries = ["US", "GB", "DE", "FR", "ES", "IT", "JP", "BR", "IN", "CN"]
-region_interest_selected = region_interest[region_interest.index.isin(countries)]
-
-# Mostrar los datos
-print(region_interest_selected)
+# Imprime los datos de volumen de búsqueda para España
+print(search_data)
 
 </pre>
 En este ejemplo, se obtienen los datos de interés por país para el término "Python programming" utilizando la función `interest_by_region`. Puedes ajustar los parámetros `resolution`, `inc_low_vol` e `inc_geo_code` según tus necesidades específicas.
