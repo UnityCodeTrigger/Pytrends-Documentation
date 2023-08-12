@@ -152,7 +152,6 @@ La función `interest_by_region` devuelve un DataFrame de Pandas que contiene lo
 
 **Input**
 <pre>
-```python
 from pytrends.request import TrendReq
 
 # Configurar la API de Google Trends
@@ -191,7 +190,6 @@ La función `suggestions` devuelve una lista de diccionarios, donde cada diccion
 
 **Input**
 <pre>
-```python
 from pytrends.request import TrendReq
 
 # Configurar la API de Google Trends
