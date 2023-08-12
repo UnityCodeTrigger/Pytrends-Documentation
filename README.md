@@ -188,20 +188,18 @@ La función `suggestions` devuelve una lista de diccionarios, donde cada diccion
 <pre>
 from pytrends.request import TrendReq
 
-# Configura la conexión a Google Trends
-pytrends = TrendReq(hl='es-US', tz=360, geo='ES')  # Establece 'geo' como 'ES' para España
+# Configurar la API de Google Trends
+pytrends = TrendReq(hl='es-US', tz=360)
 
-# Palabra clave para la que deseas obtener información
-keyword = ["minecraft"]
+# Término de búsqueda para el que deseas obtener sugerencias
+keyword = "España"
 
-# Construye la consulta
-pytrends.build_payload(kw_list=keyword)
+# Obtener sugerencias de palabras clave relacionadas
+suggestions = pytrends.suggestions(keyword)
 
-# Obtiene los datos de volumen de búsqueda para España
-search_data = pytrends.interest_over_time()
-
-# Imprime los datos de volumen de búsqueda para España
-print(search_data)
+# Mostrar las sugerencias obtenidas
+for suggestion in suggestions:
+    print(suggestion['title'])
 </pre>
 
 En este ejemplo, el atributo `suggestion['title']` se utiliza para acceder al título de cada sugerencia de palabra clave relacionada en el resultado y se imprime en la consola. Cada elemento en la lista de sugerencias devuelta por `pytrends.suggestions()` tiene un diccionario con varias claves, y `'title'` es una de ellas que contiene el título de la sugerencia de palabra clave.
