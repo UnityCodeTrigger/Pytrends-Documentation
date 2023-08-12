@@ -75,14 +75,13 @@ La función `interest_over_time` devuelve un DataFrame de Pandas que contiene lo
 
 **Input**
 <pre>
-python
 from pytrends.request import TrendReq
 
 # Configurar la API de Google Trends
 pytrends = TrendReq(hl='es-US', tz=360)
 
 # Palabra clave para la que deseas obtener información
-keyword = ["minecraft"]
+keyword = ["Python"]
 
 # Construir la consulta
 pytrends.build_payload(kw_list=keyword)
@@ -90,15 +89,9 @@ pytrends.build_payload(kw_list=keyword)
 # Obtener datos de interés a lo largo del tiempo
 interest_over_time = pytrends.interest_over_time()
 
-# Mostrar los datos y visualizar las tendencias a lo largo del tiempo
-import matplotlib.pyplot as plt
+# Mostrar los datos de interés a lo largo del tiempo
+print(interest_over_time)
 
-plt.figure(figsize=(10, 6))
-interest_over_time['minecraft'].plot()
-plt.title('Tendencias de Búsqueda para "minecraft" a lo largo del Tiempo')
-plt.xlabel('Fecha')
-plt.ylabel('Interés Relativo')
-plt.show()
 </pre>
 
 En este ejemplo, se obtienen los datos de interés a lo largo del tiempo para el término de búsqueda "minecraft" utilizando la función `pytrends.interest_over_time()`. Los datos se presentarán en forma de un gráfico de línea para visualizar las tendencias de búsqueda a lo largo del tiempo.
