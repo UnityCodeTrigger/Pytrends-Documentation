@@ -1,0 +1,14 @@
+from pytrends.request import TrendReq
+
+# Configurar la API de Google Trends
+pytrends = TrendReq(hl='es-US', tz=360)
+
+# Término de búsqueda para el que deseas obtener sugerencias
+keyword = "España"
+
+# Obtener sugerencias de palabras clave relacionadas
+suggestions = pytrends.suggestions(keyword)
+
+# Mostrar las sugerencias obtenidas
+for suggestion in suggestions:
+    print(suggestion['title'])
