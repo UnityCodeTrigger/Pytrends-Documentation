@@ -63,7 +63,7 @@ interest_over_time()
 Esta función obtiene los datos de tendencias de búsqueda.
 
 
-### Obtener el Interés a lo Largo del Tiempo
+### Interest over the time
 Esta función devuelve un DataFrame de Pandas que contiene datos de interés en función del tiempo para un término de búsqueda específico. Los datos de interés se proporcionan en forma de valores de búsqueda normalizados en el tiempo.
 
 #### Valor de Retorno:
