@@ -152,10 +152,6 @@ La función `interest_by_region` devuelve un DataFrame de Pandas que contiene lo
 
 **Input**
 <pre>
-
-</pre>
-En este ejemplo, se obtienen los datos de interés por país para el término "Python programming" utilizando la función `interest_by_region`. Puedes ajustar los parámetros `resolution`, `inc_low_vol` e `inc_geo_code` según tus necesidades específicas.
-
 ```python
 from pytrends.request import TrendReq
 
@@ -177,6 +173,10 @@ region_interest_selected = region_interest[region_interest.index.isin(countries)
 
 # Mostrar los datos
 print(region_interest_selected)
+
+</pre>
+En este ejemplo, se obtienen los datos de interés por país para el término "Python programming" utilizando la función `interest_by_region`. Puedes ajustar los parámetros `resolution`, `inc_low_vol` e `inc_geo_code` según tus necesidades específicas.
+
 
 ### Suggestions
 Esta función devuelve una lista de sugerencias de palabras clave relacionadas a partir de un término de búsqueda específico. Las sugerencias de palabras clave son términos que están relacionados con el término de búsqueda proporcionado y pueden ser útiles para expandir o refinar las consultas de búsqueda.
