@@ -131,17 +131,17 @@ Esta función devuelve un DataFrame de Pandas que contiene datos de interés en 
 - `inc_low_vol`: Un valor booleano (`True` o `False`) que indica si se deben incluir datos de países o regiones con un bajo volumen de búsquedas en Google Trends.
 - `inc_geo_code`: Un valor booleano (`True` o `False`) que indica si se deben incluir códigos ISO de países junto con los nombres en los datos.
 
-#### Paises disponibles
-1. "US" - Estados Unidos
-2. "GB" - Reino Unido
-3. "DE" - Alemania
-4. "FR" - Francia
-5. "ES" - España
-6. "IT" - Italia
-7. "JP" - Japón
-8. "BR" - Brasil
-9. "IN" - India
-10. "CN" - China
+#### Ejemplos de Paises disponibles
+"US" - Estados Unidos
+"GB" - Reino Unido
+"DE" - Alemania
+"FR" - Francia
+"ES" - España
+"IT" - Italia
+"JP" - Japón
+"BR" - Brasil
+"IN" - India
+"CN" - China
 
 #### Valor de Retorno:
 
